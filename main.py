@@ -1,7 +1,16 @@
 import math
-r=float(input('what is the diameter'))/2
+integer = 0
 pi=math.pi
-c=2*pi*r
-a=pi*(r**2)
-print('circumference = ',c)
-print('area = ',a)
+while True:
+    try:
+        integer = float(input("what is the diameter\n"))/2
+    except ValueError:
+        print("Please, enter a number")
+        continue
+    else:
+        pi = math.pi
+        c = 2 * pi * integer
+        a = pi * (integer ** 2)
+        print(f'circumference = ',c)
+        print(f'area = ',a)
+        break
