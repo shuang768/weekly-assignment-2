@@ -11,6 +11,6 @@ while True:
         pi = math.pi
         c = 2 * pi * integer
         a = pi * (integer ** 2)
-        print(f'circumference = ',c)
-        print(f'area = ',a)
+        print('circumference = ',c)
+        print('area = ',a)
         break
